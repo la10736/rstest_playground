@@ -1,0 +1,11 @@
+[package]
+name = "hello_proc_macro"
+version = "0.1.0"
+authors = ["michele <michele.damico@gmail.com>"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = {version="*", features=["full"]}
+quote = "*"
