@@ -5,6 +5,5 @@ authors = ["michele <michele.damico@gmail.com>"]
 
 [workspace]
 
-
 [dependencies]
 hello_proc_macro = { path = "hello_proc_macro" }
