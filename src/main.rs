@@ -1,10 +1,8 @@
-#![feature(proc_macro)]
-extern crate hello_proc_macro;
-
 use hello_proc_macro::hello;
 
 #[hello]
-fn other(_s: &str, _v: i32) {
+fn other(s: &str, v: i32) {
+    println!("other body <- '{}', {} ", s, v)
 }
 
 fn main() {

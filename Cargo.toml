@@ -2,8 +2,12 @@
 name = "rstest_playground"
 version = "0.1.0"
 authors = ["michele <michele.damico@gmail.com>"]
+edition = "2018"
 
 [workspace]
+members = [
+    "hello_proc_macro"
+]
 
 [dependencies]
 hello_proc_macro = { path = "hello_proc_macro" }
