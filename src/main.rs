@@ -13,8 +13,6 @@ fn main() {
 // using `fixture()` and `fix_string()` fixtures
 //
 
-//extern crate rstest;
-//
 //use rstest::rstest;
 //
 //fn fixture() -> &'static str {
