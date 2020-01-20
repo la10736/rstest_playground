@@ -4,10 +4,10 @@ use quote::quote;
 
 #[proc_macro_attribute]
 pub fn hello(_attrs: proc_macro::TokenStream, body: proc_macro::TokenStream) -> proc_macro::TokenStream{
-    // Parse the string representation
+    // Parse tokens
     let ast = syn::parse(body).unwrap();
 
-    // Build the impl
+    // Build impl
     let gen = impl_hello_world(ast);
 
     println!(r#"
